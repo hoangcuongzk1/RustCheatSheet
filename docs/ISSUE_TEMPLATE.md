@@ -1,2 +1,0 @@
-# RustCheatSheet
-`ISSUE_TEMPLATE`
