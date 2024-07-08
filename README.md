@@ -6,7 +6,9 @@
 - [[#Conditionals and Loops|Conditionals and Loops]]
 - [[#Strings and Arrays|Strings and Arrays]]
 - [[#Scope and Modules|Scope and Modules]]
-- [[#Operators and Macros|Operators and Macros]]### Variable Declaration and Data Types
+- [[#Operators and Macros|Operators and Macros]]
+ 
+## Variable Declaration and Data Types
 ---
 
 | Symbol   | Meaning              | Usage Scenarios                                            | Specific Examples                             |
@@ -18,16 +20,16 @@
 | `const`  | Constant declaration | Declaring an immutable value                               | `const MAX_POINTS: u32 = 100_000;`            |
 | `static` | Static variable      | Declaring a static value, shared across the entire program | `static HELLO_WORLD: &str = "Hello, world!";` |
 
-### References and Pointers
+## References and Pointers
 ---
 
-| Symbol | Meaning                            | Usage Scenarios                                | Specific Examples                        |
-| ------ | ---------------------------------- | --------------------------------------------- | ---------------------------------------- |
-| `&`    | Immutable reference                | Borrowing data immutably                      | `let y = &x;`                             |
-| `&mut` | Mutable reference                  | Borrowing data mutably                        | `let y = &mut x; *y = 6;`                 |
-| `*`    | Dereference operator or multiplication | Accessing value from a pointer or multiplication | `let y = *x;` or `let z = x * y;`         |
+| Symbol | Meaning                                | Usage Scenarios                                  | Specific Examples                 |
+| ------ | -------------------------------------- | ------------------------------------------------ | --------------------------------- |
+| `&`    | Immutable reference                    | Borrowing data immutably                         | `let y = &x;`                     |
+| `&mut` | Mutable reference                      | Borrowing data mutably                           | `let y = &mut x; *y = 6;`         |
+| `*`    | Dereference operator or multiplication | Accessing value from a pointer or multiplication | `let y = *x;` or `let z = x * y;` |
 
-### Functions and Code Blocks
+## Functions and Code Blocks
 ---
 
 | Symbol       | Meaning                                          | Usage Scenarios                                      | Specific Examples                                      |
@@ -37,7 +39,7 @@
 | `{}`         | Code block                                       | Enclosing a code block or scope                      | `if x > 5 { println!("x is greater than 5"); }`       |
 | `impl`       | Implementation block                             | Defining methods for a struct or enum                | `impl Point { fn new(x: i32, y: i32) -> Self { Self { x, y } } }` |
 
-### Structs and Data Types
+## Structs and Data Types
 ---
 
 | Symbol   | Meaning              | Usage Scenarios                           | Specific Examples                                                 |
@@ -47,7 +49,7 @@
 | `trait`  | Trait definition     | Defining shared behavior for types        | `trait Printable { fn print(&self); }`                            |
 | `impl`   | Implementation block | Defining methods for a struct or enum     | `impl Point { fn new(x: i32, y: i32) -> Self { Self { x, y } } }` |
 
-### Conditionals and Loops
+## Conditionals and Loops
 ---
 
 | Symbol  | Meaning               | Usage Scenarios                                    | Specific Examples                                                                             |
@@ -59,7 +61,7 @@
 | `loop`  | Infinite loop         | Infinite loop until a break statement              | `loop { println!("looping"); break; }`                                                        |
 | `match` | Pattern matching      | Matching patterns and executing corresponding code | `match x { 1 => println!("One"), _ => println!("Not One"), }`                                 |
 
-### Strings and Arrays
+## Strings and Arrays
 ---
 
 | Symbol   | Meaning                     | Usage Scenarios                           | Specific Examples                              |
@@ -71,7 +73,7 @@
 | `vec!`   | Macro for creating a vector | Creating a vector with specified elements | `let v = vec![1, 2, 3];`                       |
 
 
-### Scope and Modules
+## Scope and Modules
 ---
 
 | Symbol | Meaning                   | Usage Scenarios                              | Specific Examples                                                              |
@@ -81,7 +83,7 @@
 | `use`  | Bringing items into scope | Importing functions, structs, or modules     | `use std::collections::HashMap;`                                               |
 | `pub`  | Public visibility         | Making functions or structs public           | `pub fn my_function() { println!("Hello"); }`                                  |
 
-### Operators and Macros
+## Operators and Macros
 ---
 
 | Symbol       | Meaning                                          | Usage Scenarios                                      | Specific Examples                                      |
