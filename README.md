@@ -1,13 +1,16 @@
+- [Symbols](#symbols)
+  - [Variable Declaration and Data Types](#variable-declaration-and-data-types)
+  - [References and Pointers](#references-and-pointers)
+  - [Functions and Code Blocks](#functions-and-code-blocks)
+  - [Structs and Data Types](#structs-and-data-types)
+  - [Conditionals and Loops](#conditionals-and-loops)
+  - [Strings and Arrays](#strings-and-arrays)
+  - [Scope and Modules](#scope-and-modules)
+  - [Operators and Macros](#operators-and-macros)
 
-- [[#Variable Declaration and Data Types|Variable Declaration and Data Types]]
-- [[#References and Pointers|References and Pointers]]
-- [[#Functions and Code Blocks|Functions and Code Blocks]]
-- [[#Structs and Data Types|Structs and Data Types]]
-- [[#Conditionals and Loops|Conditionals and Loops]]
-- [[#Strings and Arrays|Strings and Arrays]]
-- [[#Scope and Modules|Scope and Modules]]
-- [[#Operators and Macros|Operators and Macros]]
- 
+# Symbols
+---
+
 ## Variable Declaration and Data Types
 ---
 
