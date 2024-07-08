@@ -11,6 +11,19 @@
   - [Formatting and Printing](#formatting-and-printing)
 
 
+- [[#Symbols|Symbols]]
+	- [[#Symbols#Variable Declaration and Data Types|Variable Declaration and Data Types]]
+	- [[#Symbols#Ownership and Lifetimes|Ownership and Lifetimes]]
+	- [[#Symbols#References and Pointers|References and Pointers]]
+	- [[#Symbols#Functions and Code Blocks|Functions and Code Blocks]]
+	- [[#Symbols#Structs and Data Types|Structs and Data Types]]
+	- [[#Symbols#Conditionals and Loops|Conditionals and Loops]]
+	- [[#Symbols#Strings and Arrays|Strings and Arrays]]
+	- [[#Symbols#Scope and Modules|Scope and Modules]]
+	- [[#Symbols#Operators and Macros|Operators and Macros]]
+	- [[#Symbols#Formatting and Printing|Formatting and Printing]]
+
+
 ## Symbols
 ---
 ### Variable Declaration and Data Types
@@ -40,7 +53,7 @@ let f = move || {
     println!("{:?}", c);  
 };  
 
-println!("{}", c[0]); // This will not work  🚫🚫🚫
+println!("{}", c[0]); // 🚫
 
 f();
 ```
@@ -48,7 +61,7 @@ f();
 ```rust
 let c = vec![1, 2, 3];  
 
-println!("{}", c[0]); // This will work  ✅✅✅
+println!("{}", c[0]); // ✅
 
 let f = move || {  
     println!("{:?}", c);  
@@ -67,12 +80,25 @@ f();
 
 ### Functions and Code Blocks
 
-| Symbol       | Meaning                                          | Usage Scenarios                                      | Specific Examples                                      |
-|--------------|--------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------|
-| `fn`         | Function definition                              | Defining a new function                              | `fn add(a: i32, b: i32) -> i32 { a + b }`             |
-| `->`         | Return type                                      | Specifying the return type of a function             | `fn add(a: i32, b: i32) -> i32 { a + b }`             |
-| `{}`         | Code block                                       | Enclosing a code block or scope                      | `if x > 5 { println!("x is greater than 5"); }`       |
-| `impl`       | Implementation block                             | Defining methods for a struct or enum                | `impl Point { fn new(x: i32, y: i32) -> Self { Self { x, y } } }` |
+| Symbol | Meaning              | Usage Scenarios                                 | Specific Examples                                                 |
+| ------ | -------------------- | ----------------------------------------------- | ----------------------------------------------------------------- |
+| `fn`   | Function definition  | Defining a new function                         | `fn add(a: i32, b: i32) -> i32 { a + b }`                         |
+| `->`   | Return type          | Specifying the return type of a function        | `fn add(a: i32, b: i32) -> i32 { a + b }`                         |
+| `{}`   | Code block           | Enclosing a code block or scope                 | `if x > 5 { println!("x is greater than 5"); }`                   |
+| `impl` | Implementation block | Defining methods for a struct or enum           | `impl Point { fn new(x: i32, y: i32) -> Self { Self { x, y } } }` |
+| \| \|  | Closure definition   | quick define function inside existed code block |                                                                   |
+- `||`
+```rust
+let c = vec![1, 2, 3];
+
+let f = || {
+    println!("{:?}", c);
+};
+
+f();
+
+```
+
 
 ### Structs and Data Types
 
