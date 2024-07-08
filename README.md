@@ -24,6 +24,39 @@
 | `const` | Constant declaration          | Declaring an immutable value                                | `const MAX_POINTS: u32 = 100_000;`                 |
 | `static`| Static variable               | Declaring a static value, shared across the entire program  | `static HELLO_WORLD: &str = "Hello, world!";`      |
 
+### Ownership and Lifetimes
+
+| Symbol    | Meaning             | Usage Scenarios                                            | Specific Examples                                                                             |
+| --------- | ------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `'a`      | Lifetime annotation | Specifying the lifetime of a reference                     | `fn longest<'a>(x: &'a str, y: &'a str) -> &'a str { if x.len() > y.len() { x } else { y } }` |
+| `'static` | Static lifetime     | Data lives for the entire duration of the program          | `let s: &'static str = "Hello, world!";`                                                      |
+| `move`    | Ownership transfer  | Transferring ownership of captured variables into closures |                                                                                               |
+- `move` 
+```rust
+
+let c = vec![1, 2, 3];  
+
+let f = move || {  
+    println!("{:?}", c);  
+};  
+
+println!("{}", c[0]); // This will not work  🚫🚫🚫
+
+f();
+```
+
+```rust
+let c = vec![1, 2, 3];  
+
+println!("{}", c[0]); // This will work  ✅✅✅
+
+let f = move || {  
+    println!("{:?}", c);  
+};  
+
+f();
+```
+
 ### References and Pointers
 
 | Symbol | Meaning                            | Usage Scenarios                                | Specific Examples                        |
@@ -90,6 +123,8 @@
 | `as`         | Type casting                                     | Casting a value to another type                      | `let x = 5 as f64;`                                    |
 | `_`          | Placeholder or discard value                     | Ignoring a value in pattern matching or unused variable | `let _ = x;` or `match x { _ => () }`                  |
 | `;`          | Statement terminator                             | Ending a statement                                   | `let x = 5;`                                          |
+| `#`          | Attribute                                        | Applying metadata to modules, crates, or functions   | `#[derive(Debug)] struct Point { x: i32, y: i32 }`     |
+
 
 ### Formatting and Printing
 
@@ -97,4 +132,3 @@
 |--------------|--------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------|
 | `:?`         | Debug formatting                                 | Printing or formatting output for debugging purposes | `println!("{:?}", my_variable);`                       |
 
-This covers a comprehensive range of Rust symbols, their meanings, usage scenarios, and specific examples.
