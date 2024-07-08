@@ -1,6 +1,7 @@
 
 - [Symbols](#symbols)
   - [Variable Declaration and Data Types](#variable-declaration-and-data-types)
+  - [Ownership and Lifetimes](#ownership-and-lifetimes)
   - [References and Pointers](#references-and-pointers)
   - [Functions and Code Blocks](#functions-and-code-blocks)
   - [Structs and Data Types](#structs-and-data-types)
@@ -11,17 +12,6 @@
   - [Formatting and Printing](#formatting-and-printing)
 
 
-- [[#Symbols|Symbols]]
-	- [[#Symbols#Variable Declaration and Data Types|Variable Declaration and Data Types]]
-	- [[#Symbols#Ownership and Lifetimes|Ownership and Lifetimes]]
-	- [[#Symbols#References and Pointers|References and Pointers]]
-	- [[#Symbols#Functions and Code Blocks|Functions and Code Blocks]]
-	- [[#Symbols#Structs and Data Types|Structs and Data Types]]
-	- [[#Symbols#Conditionals and Loops|Conditionals and Loops]]
-	- [[#Symbols#Strings and Arrays|Strings and Arrays]]
-	- [[#Symbols#Scope and Modules|Scope and Modules]]
-	- [[#Symbols#Operators and Macros|Operators and Macros]]
-	- [[#Symbols#Formatting and Printing|Formatting and Printing]]
 
 
 ## Symbols
@@ -72,11 +62,11 @@ f();
 
 ### References and Pointers
 
-| Symbol | Meaning                            | Usage Scenarios                                | Specific Examples                        |
-| ------ | ---------------------------------- | --------------------------------------------- | ---------------------------------------- |
-| `&`    | Immutable reference                | Borrowing data immutably                      | `let y = &x;`                             |
-| `&mut` | Mutable reference                  | Borrowing data mutably                        | `let y = &mut x; *y = 6;`                 |
-| `*`    | Dereference operator or multiplication | Accessing value from a pointer or multiplication | `let y = *x;` or `let z = x * y;`         |
+| Symbol | Meaning                                | Usage Scenarios                                  | Specific Examples                 |
+| ------ | -------------------------------------- | ------------------------------------------------ | --------------------------------- |
+| `&`    | Immutable reference                    | Borrowing data immutably                         | `let y = &x;`                     |
+| `&mut` | Mutable reference                      | Borrowing data mutably                           | `let y = &mut x; *y = 6;`         |
+| `*`    | Dereference operator or multiplication | Accessing value from a pointer or multiplication | `let y = *x;` or `let z = x * y;` |
 
 ### Functions and Code Blocks
 
