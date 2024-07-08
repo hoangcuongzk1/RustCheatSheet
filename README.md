@@ -1,6 +1,4 @@
 
-## - [Symbols](#symbols)
-- [- Symbols](#--symbols)
 - [Symbols](#symbols)
   - [Variable Declaration and Data Types](#variable-declaration-and-data-types)
   - [References and Pointers](#references-and-pointers)
@@ -11,6 +9,9 @@
   - [Scope and Modules](#scope-and-modules)
   - [Operators and Macros](#operators-and-macros)
   - [Formatting and Printing](#formatting-and-printing)
+
+
+## Symbols
 ---
 ### Variable Declaration and Data Types
 
